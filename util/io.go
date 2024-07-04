@@ -33,7 +33,18 @@ func GetAllfiles(p *constant.Param) []string {
 根据扩展名判断路径切片中符合的文件
 */
 func getFilesByExt(fps []string) (allFiles []string) {
-	audio := []string{".jpg", ".tiff", ".png", ".jpeg", ".gif", ".bmp", ".webp"}
+	audio := []string{
+		"jpg",
+		"png",
+		"gif",
+		"webp",
+		"cr2",
+		"tif",
+		"bmp",
+		"heif",
+		"ico",
+		"dwg",
+	}
 	for _, fp := range fps {
 		for _, item := range audio {
 			if filepath.Ext(fp) == item {
