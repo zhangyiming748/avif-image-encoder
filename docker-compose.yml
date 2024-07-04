@@ -1,0 +1,12 @@
+name: DownloadAndWhisperAndTrans
+services:
+  whisperandtrans:
+    stdin_open: true
+    tty: true
+    container_name: wta
+    volumes:
+      - /path/to/save/videos:/data # 你的视频所在文件夹
+    environment:
+      - root=/data # 容器中指定处理视频的文件夹 不用修改
+      - vbr= 2 # 动态比特率 1-3
+    image: zhangyiming748/aac_audio_encoder:latest # 指定生成的镜像名称和标签
