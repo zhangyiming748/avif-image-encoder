@@ -8,4 +8,4 @@ services:
       - /d/wbb:/data # 你的视频所在文件夹
     environment:
       - root=/data # 容器中指定处理视频的文件夹 不用修改
-    image: zhangyiming748/avif_image_encoder:v0.0.2 # 指定生成的镜像名称和标签
+    image: zhangyiming748/avif_image_encoder:latest # 指定生成的镜像名称和标签
