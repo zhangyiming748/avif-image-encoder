@@ -34,16 +34,16 @@ func GetAllfiles(p *constant.Param) []string {
 */
 func getFilesByExt(fps []string) (allFiles []string) {
 	audio := []string{
-		"jpg",
-		"png",
-		"gif",
-		"webp",
-		"cr2",
-		"tif",
-		"bmp",
-		"heif",
-		"ico",
-		"dwg",
+		".jpg",
+		".png",
+		".gif",
+		".webp",
+		".cr2",
+		".tif",
+		".bmp",
+		".heif",
+		".ico",
+		".dwg",
 	}
 	for _, fp := range fps {
 		for _, item := range audio {
